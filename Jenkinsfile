@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/Arundhuti-Deka/docker-jenkins-app.git'
+                git branch: 'main',
+                url: 'https://github.com/Arundhuti-Deka/docker-jenkins-app.git'
             }
         }
 
